@@ -8,9 +8,14 @@ jobs:
     steps:
       - name: echo a string
         run: echo "Hello man"
-      - name: nultiline
+      - name: multiline
         run: | 
           node -v
           npm -v
+      - name: pythin command 
+        run: | 
+          import platform
+          print(platform.processor())
+        shell: python
 
-          
+
